@@ -29,7 +29,8 @@
 - **Impact stats:** 80% task reduction · <2 min lead follow-up · 10+ hrs/week saved · 5× more leads nurtured ← animated counters on scroll
 - **Projects:** 20 systems across 6 categories — desktop-window UI with sidebar filter, list, preview pane, full modal per project (problem · steps · before/after · tools · gallery)
 - **About:** VA-turned-Automation Specialist, Philippines, 3+ years ops
-- **Contact/CTA:** mailto:ckmendoza.systems@gmail.com
+- **Contact/CTA:** All booking CTAs (Book a Call · Book a Free Call · Book a Free Strategy Call · Work With Me · Build Similar System) → `https://calendly.com/ckmendoza-systems` (opens in new tab); displayed email `ckmendoza.systems@gmail.com` stays as mailto
+- **Footer:** 3-column — (1) brand logo + tagline "Automation Specialist building workflows that run 24/7" + green availability badge + location; (2) Navigate links (Services · Projects · About · Results); (3) Specialties plain list (Zapier · Make.com · n8n · GHL); copyright bar with "Back to top ↑" — no CTAs or email (handled by CTA section above); Results section has `id="results"` anchor
 
 **Interactive features (all in `index.html` `<script>`):**
 - Dark mode toggle — sun/moon SVG button upper-right nav; preference persists via `localStorage`; anti-FOUC inline script in `<head>`
