@@ -1,0 +1,13 @@
+# Claude Code memory (local-only, contains private context)
+MY PROJECTS/.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp/editor files
+*.tmp
+*.log
+.vscode/
+*.code-workspace

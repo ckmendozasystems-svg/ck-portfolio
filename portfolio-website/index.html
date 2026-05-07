@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+  <title>CK Mendoza — Automation Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">CK Mendoza<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+        <svg class="dt-icon dt-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="dt-icon dt-moon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="mailto:ckmendoza.systems@gmail.com" class="btn-nav">Book a Call</a>
+      <button class="ham-btn" id="hamBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="mailto:ckmendoza.systems@gmail.com" class="btn btn-dark">Book a Free Call →</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-blob hb1" aria-hidden="true"></div>
+    <div class="hero-blob hb2" aria-hidden="true"></div>
+    <div class="hero-blob hb3" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="avail-badge"><span class="badge-spark">✦</span> Available for new projects</div>
+        <h1>Stop Running Your<br>Business on <span class="hl-manual">Manual.</span></h1>
+        <p class="hero-sub">I design and build automation systems that connect your tools, streamline your processes, and reduce repetitive work — helping you <span class="hl-orange">save time</span>, <span class="hl-blue">cut costs</span>, and run your business <span class="hl-purple">more efficiently</span>.</p>
+        <div class="hero-btns">
+          <a href="mailto:ckmendoza.systems@gmail.com" class="btn btn-dark">Book a Free Strategy Call →</a>
+          <a href="#projects" class="btn btn-ghost">Browse Live Automations →</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="cw-context">
+          <span class="cw-ctx-label">Automating with</span>
+          <span class="cw-ctx-badge cwb-ghl">GoHighLevel</span>
+          <span class="cw-ctx-badge cwb-zap">Zapier</span>
+          <span class="cw-ctx-badge cwb-make">Make.com</span>
+          <span class="cw-ctx-badge cwb-n8n">n8n</span>
+        </div>
+        <div class="chat-widget">
+          <div class="cw-header">
+            <div class="cw-avatar">⚡</div>
+            <div class="cw-info">
+              <div class="cw-name">Automation Assistant</div>
+              <div class="cw-status"><span class="cw-dot"></span>Online · Replies instantly · 24/7</div>
+            </div>
+          </div>
+          <div class="cw-body" id="cwBody"></div>
+          <div class="cw-footer">Common questions business owners ask...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS MARQUEE -->
+  <div class="tools-marquee">
+    <p class="tm-eyebrow">Powered by Industry-Leading Tools</p>
+    <div class="tm-fade-wrap">
+      <div class="tm-track">
+        <div class="tm-item"><div class="tm-logo tml-asana"><img src="https://cdn.simpleicons.org/asana" alt="Asana" loading="lazy" /></div><span class="tm-name">Asana</span></div>
+        <div class="tm-item"><div class="tm-logo tml-trello"><img src="https://cdn.simpleicons.org/trello" alt="Trello" loading="lazy" /></div><span class="tm-name">Trello</span></div>
+        <div class="tm-item"><div class="tm-logo tml-slack">💬</div><span class="tm-name">Slack</span></div>
+        <div class="tm-item"><div class="tm-logo tml-notion"><img src="https://cdn.simpleicons.org/notion" alt="Notion" loading="lazy" /></div><span class="tm-name">Notion</span></div>
+        <div class="tm-item"><div class="tm-logo tml-xero"><img src="https://cdn.simpleicons.org/xero" alt="Xero" loading="lazy" /></div><span class="tm-name">Xero</span></div>
+        <div class="tm-item"><div class="tm-logo tml-openrouter">🔀</div><span class="tm-name">Open Router</span></div>
+        <div class="tm-item"><div class="tm-logo tml-grok">⚡</div><span class="tm-name">Grok</span></div>
+        <div class="tm-item"><div class="tm-logo tml-perplexity"><img src="https://cdn.simpleicons.org/perplexity" alt="Perplexity" loading="lazy" /></div><span class="tm-name">Perplexity</span></div>
+        <div class="tm-item"><div class="tm-logo tml-claude"><img src="https://cdn.simpleicons.org/anthropic" alt="Claude" loading="lazy" /></div><span class="tm-name">Claude</span></div>
+        <div class="tm-item"><div class="tm-logo tml-openai">✨</div><span class="tm-name">OpenAI</span></div>
+        <div class="tm-item"><div class="tm-logo tml-gemini"><img src="https://cdn.simpleicons.org/googlegemini" alt="Gemini" loading="lazy" /></div><span class="tm-name">Gemini</span></div>
+        <div class="tm-item"><div class="tm-logo tml-elevenlabs"><img src="https://cdn.simpleicons.org/elevenlabs" alt="ElevenLabs" loading="lazy" /></div><span class="tm-name">ElevenLabs</span></div>
+        <div class="tm-item"><div class="tm-logo tml-airtable"><img src="https://cdn.simpleicons.org/airtable" alt="Airtable" loading="lazy" /></div><span class="tm-name">Airtable</span></div>
+        <div class="tm-item"><div class="tm-logo tml-github"><img src="https://cdn.simpleicons.org/github" alt="GitHub" loading="lazy" /></div><span class="tm-name">GitHub</span></div>
+        <div class="tm-item"><div class="tm-logo tml-ghl">🚀</div><span class="tm-name">GoHighLevel</span></div>
+        <div class="tm-item"><div class="tm-logo tml-make"><img src="https://cdn.simpleicons.org/make" alt="Make" loading="lazy" /></div><span class="tm-name">Make</span></div>
+        <div class="tm-item"><div class="tm-logo tml-zapier"><img src="https://cdn.simpleicons.org/zapier" alt="Zapier" loading="lazy" /></div><span class="tm-name">Zapier</span></div>
+        <div class="tm-item"><div class="tm-logo tml-n8n"><img src="https://cdn.simpleicons.org/n8n" alt="n8n" loading="lazy" /></div><span class="tm-name">n8n</span></div>
+        <!-- Duplicate set -->
+        <div class="tm-item"><div class="tm-logo tml-asana"><img src="https://cdn.simpleicons.org/asana" alt="Asana" loading="lazy" /></div><span class="tm-name">Asana</span></div>
+        <div class="tm-item"><div class="tm-logo tml-trello"><img src="https://cdn.simpleicons.org/trello" alt="Trello" loading="lazy" /></div><span class="tm-name">Trello</span></div>
+        <div class="tm-item"><div class="tm-logo tml-slack">💬</div><span class="tm-name">Slack</span></div>
+        <div class="tm-item"><div class="tm-logo tml-notion"><img src="https://cdn.simpleicons.org/notion" alt="Notion" loading="lazy" /></div><span class="tm-name">Notion</span></div>
+        <div class="tm-item"><div class="tm-logo tml-xero"><img src="https://cdn.simpleicons.org/xero" alt="Xero" loading="lazy" /></div><span class="tm-name">Xero</span></div>
+        <div class="tm-item"><div class="tm-logo tml-openrouter">🔀</div><span class="tm-name">Open Router</span></div>
+        <div class="tm-item"><div class="tm-logo tml-grok">⚡</div><span class="tm-name">Grok</span></div>
+        <div class="tm-item"><div class="tm-logo tml-perplexity"><img src="https://cdn.simpleicons.org/perplexity" alt="Perplexity" loading="lazy" /></div><span class="tm-name">Perplexity</span></div>
+        <div class="tm-item"><div class="tm-logo tml-claude"><img src="https://cdn.simpleicons.org/anthropic" alt="Claude" loading="lazy" /></div><span class="tm-name">Claude</span></div>
+        <div class="tm-item"><div class="tm-logo tml-openai">✨</div><span class="tm-name">OpenAI</span></div>
+        <div class="tm-item"><div class="tm-logo tml-gemini"><img src="https://cdn.simpleicons.org/googlegemini" alt="Gemini" loading="lazy" /></div><span class="tm-name">Gemini</span></div>
+        <div class="tm-item"><div class="tm-logo tml-elevenlabs"><img src="https://cdn.simpleicons.org/elevenlabs" alt="ElevenLabs" loading="lazy" /></div><span class="tm-name">ElevenLabs</span></div>
+        <div class="tm-item"><div class="tm-logo tml-airtable"><img src="https://cdn.simpleicons.org/airtable" alt="Airtable" loading="lazy" /></div><span class="tm-name">Airtable</span></div>
+        <div class="tm-item"><div class="tm-logo tml-github"><img src="https://cdn.simpleicons.org/github" alt="GitHub" loading="lazy" /></div><span class="tm-name">GitHub</span></div>
+        <div class="tm-item"><div class="tm-logo tml-ghl">🚀</div><span class="tm-name">GoHighLevel</span></div>
+        <div class="tm-item"><div class="tm-logo tml-make"><img src="https://cdn.simpleicons.org/make" alt="Make" loading="lazy" /></div><span class="tm-name">Make</span></div>
+        <div class="tm-item"><div class="tm-logo tml-zapier"><img src="https://cdn.simpleicons.org/zapier" alt="Zapier" loading="lazy" /></div><span class="tm-name">Zapier</span></div>
+        <div class="tm-item"><div class="tm-logo tml-n8n"><img src="https://cdn.simpleicons.org/n8n" alt="n8n" loading="lazy" /></div><span class="tm-name">n8n</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAIN SECTION -->
+  <section class="section" id="pain">
+    <div class="container">
+      <p class="eyebrow">THE PROBLEM</p>
+      <h2 class="sh2">Every Manual Task Is Costing You<br>More Than You Think</h2>
+      <p class="ssub">If you're still doing these — you're paying for it in time, errors, and missed growth.</p>
+      <div class="pain-grid">
+        <div class="pain-card"><span class="pi">📋</span><p>Copy-pasting data between tools by hand</p></div>
+        <div class="pain-card"><span class="pi">🔔</span><p>Chasing leads because follow-ups keep slipping through</p></div>
+        <div class="pain-card"><span class="pi">📧</span><p>Sending the same emails and messages every single week</p></div>
+        <div class="pain-card"><span class="pi">⏱️</span><p>Spending hours on tasks that should take minutes</p></div>
+        <div class="pain-card"><span class="pi">📊</span><p>Building reports manually instead of pulling them automatically</p></div>
+        <div class="pain-card"><span class="pi">🔗</span><p>Tools that don't talk to each other — so you do it for them</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section s-gray" id="services">
+    <div class="container">
+      <p class="eyebrow">WHAT I BUILD</p>
+      <h2 class="sh2">Automations That Perform</h2>
+      <div class="svc-grid">
+
+        <div class="svc-card">
+          <div class="svc-top">
+            <div class="svc-icon icon-purple">⚡</div>
+            <span class="svc-tag tag-purple">GoHighLevel</span>
+          </div>
+          <h3>GoHighLevel Systems</h3>
+          <p>End-to-end GHL buildouts for service businesses — CRM pipelines, lead nurture sequences, SMS and email campaigns, reputation management, membership sites, sales funnels, appointment systems, AI conversation bots, and full sub-account setup. One platform, fully working.</p>
+          <div class="tag-row"><span>CRM & Pipelines</span><span>SMS & Email Campaigns</span><span>AI Bots</span><span>Funnels</span><span>Memberships</span></div>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-top">
+            <div class="svc-icon icon-orange">🔗</div>
+            <span class="svc-tag tag-orange">Zapier</span>
+          </div>
+          <h3>Zapier Automation</h3>
+          <p>No-code workflows that connect your entire stack — sync leads across CRMs, trigger onboarding sequences, automate invoicing, route form submissions, post to Slack, update spreadsheets, and eliminate every manual handoff between your apps.</p>
+          <div class="tag-row"><span>Lead Routing</span><span>App Sync</span><span>Onboarding</span><span>Notifications</span><span>Data Handoffs</span></div>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-top">
+            <div class="svc-icon icon-blue">🔄</div>
+            <span class="svc-tag tag-blue">Make.com</span>
+          </div>
+          <h3>Make.com Workflows</h3>
+          <p>Visual, logic-heavy scenarios built for complex operations — multi-branch API integrations, AI-powered document handling, e-commerce order flows, data transformation pipelines, automated reporting, and anything that needs conditional logic at scale.</p>
+          <div class="tag-row"><span>API Integration</span><span>AI Document Handling</span><span>E-commerce</span><span>Data Pipelines</span><span>Reporting</span></div>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-top">
+            <div class="svc-icon icon-purple">🤖</div>
+            <span class="svc-tag tag-purple">n8n</span>
+          </div>
+          <h3>n8n AI Agents</h3>
+          <p>Self-hosted AI workflows with full control — autonomous agents, RAG pipelines, multi-step AI reasoning, customer support bots, sales outreach sequences, web scrapers, internal data monitoring, and custom integrations that off-the-shelf tools can't touch.</p>
+          <div class="tag-row"><span>Autonomous Agents</span><span>RAG Pipelines</span><span>Support Bots</span><span>Outreach</span><span>Custom Integrations</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MEASURED IMPACT -->
+  <section class="section" id="impact">
+    <div class="container">
+      <p class="eyebrow">MEASURED IMPACT</p>
+      <h2 class="sh2">Less Manual Work. More Pipeline. Zero Babysitting.</h2>
+      <div class="impact-grid">
+
+        <div class="impact-card">
+          <div class="impact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="6" width="4" height="15" rx="1"/><rect x="10" y="11" width="4" height="10" rx="1"/><rect x="17" y="3" width="4" height="18" rx="1"/>
+            </svg>
+          </div>
+          <div class="impact-num" data-count="80" data-suffix="%">80%</div>
+          <div class="impact-label">Reduction in manual, repetitive tasks from day one</div>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/>
+            </svg>
+          </div>
+          <div class="impact-num" data-count="2" data-prefix="&lt;" data-suffix=" min">&lt;2 min</div>
+          <div class="impact-label">From new lead captured to first automated follow-up</div>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+            </svg>
+          </div>
+          <div class="impact-num" data-count="10" data-suffix="+ hrs">10+ hrs</div>
+          <div class="impact-label">Saved per client, per week, once systems are live</div>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="impact-num" data-count="5" data-suffix="×">5×</div>
+          <div class="impact-label">More leads nurtured without adding a single hire</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="eyebrow">PREVIOUS WORKS</p>
+      <h2 class="sh2">Systems Built to Perform.</h2>
+
+      <!-- Desktop Window -->
+      <div class="desktop-window">
+        <!-- Title Bar -->
+        <div class="desktop-titlebar">
+          <div class="desktop-dots">
+            <span class="dt-dot dt-red"></span>
+            <span class="dt-dot dt-yellow"></span>
+            <span class="dt-dot dt-green"></span>
+          </div>
+          <span class="desktop-win-title">✦ Automation Systems Portfolio</span>
+          <span class="desktop-win-count">20 systems</span>
+        </div>
+
+        <!-- Column Headers -->
+        <div class="desktop-col-bar">
+          <div class="dcb-cat">CATEGORY</div>
+          <div class="dcb-sys">SYSTEMS</div>
+          <div class="dcb-prev">PREVIEW</div>
+        </div>
+
+        <!-- 3-Column Body -->
+        <div class="desktop-body">
+
+          <!-- Col 1: Categories -->
+          <aside class="desktop-sidebar">
+            <button class="dcat-btn active" data-cat="all">All Systems <span class="dcat-ct">20</span></button>
+            <button class="dcat-btn" data-cat="leadgen">Lead Gen &amp; CRM <span class="dcat-ct">6</span></button>
+            <button class="dcat-btn" data-cat="ai-agents">AI Agents &amp; Chatbots <span class="dcat-ct">3</span></button>
+            <button class="dcat-btn" data-cat="content">Content &amp; Social <span class="dcat-ct">3</span></button>
+            <button class="dcat-btn" data-cat="hiring">Hiring &amp; HR <span class="dcat-ct">3</span></button>
+            <button class="dcat-btn" data-cat="finance">Finance &amp; Docs <span class="dcat-ct">3</span></button>
+            <button class="dcat-btn" data-cat="sales">Sales &amp; Funnels <span class="dcat-ct">2</span></button>
+          </aside>
+
+          <!-- Col 2: Systems List -->
+          <div class="desktop-list" id="desktopList"></div>
+
+          <!-- Col 3: Preview Pane -->
+          <div class="desktop-preview-pane">
+            <div class="preview-img-box">
+              <img id="previewImg" src="" alt="" />
+              <button class="preview-nav-arrow pna-prev" id="previewNavPrev" style="display:none">‹</button>
+              <button class="preview-nav-arrow pna-next" id="previewNavNext" style="display:none">›</button>
+              <div class="preview-img-counter" id="previewImgCounter"></div>
+              <button class="preview-overlay-btn" id="previewViewBtn">View Full Project →</button>
+            </div>
+            <div class="preview-info-box">
+              <div class="preview-meta-row">
+                <span class="preview-tool-badge" id="previewBadge"></span>
+              </div>
+              <p class="preview-proj-name" id="previewName"></p>
+              <p class="preview-proj-tagline" id="previewTagline"></p>
+              <div class="preview-stats" id="previewStats"></div>
+              <div class="preview-tools-row" id="previewTools"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section s-gray" id="about">
+    <div class="container about-wrap">
+      <div class="about-img">
+        <img src="../brand-assets/headshot.jpg" alt="CK Mendoza" />
+      </div>
+      <div class="about-txt">
+        <p class="eyebrow">MEET THE AUTOMATION SPECIALIST</p>
+        <h2>Hi, I'm CK.</h2>
+        <p>I help businesses eliminate repetitive work through smart automation systems that streamline operations.</p>
+        <p>Before specializing in automation, I spent 3+ years working in operations across different industries. That experience gave me a deep understanding of the manual processes businesses deal with daily — which is why I build automations that are practical, scalable, and genuinely useful in real-world operations.</p>
+        <p>I primarily work with <span class="hl-tools">Zapier, GoHighLevel, Make.com, and n8n</span> to streamline workflows, reduce manual tasks, and help businesses run more efficiently.</p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:8px;">
+          <a href="mailto:ckmendoza.systems@gmail.com" class="btn btn-dark" style="width:fit-content;">Work With Me</a>
+          <a href="https://drive.google.com/file/d/1Is2r-UPiZKhZN6CPRtA_UtHbmtb6hLXZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="width:fit-content;">View Resume →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="section s-orange">
+    <div class="container">
+      <p class="eyebrow eyebrow-orange">AFTER WORKING TOGETHER</p>
+      <h2 class="sh2">Growth Gets Easier When Your<br>Business Runs Without You</h2>
+      <div class="results-grid">
+        <div class="result-item"><span class="ri-check">✓</span> Leads captured, sorted, and followed up automatically</div>
+        <div class="result-item"><span class="ri-check">✓</span> Zero time spent on manual data entry or copy-paste tasks</div>
+        <div class="result-item"><span class="ri-check">✓</span> Workflows running 24/7 — with or without you</div>
+        <div class="result-item"><span class="ri-check">✓</span> Processes documented, repeatable, and handoff-ready</div>
+        <div class="result-item"><span class="ri-check">✓</span> More time for the work that actually grows your business</div>
+        <div class="result-item"><span class="ri-check">✓</span> A system that scales — without adding headcount</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA DARK -->
+  <section class="cta-dark" id="contact">
+    <div class="container cta-inner">
+      <h2>Not Sure Where to Start?</h2>
+      <p>Let's talk about your business and figure out exactly where automation will move the needle most. First call is free.</p>
+      <div class="cta-btns">
+        <a href="mailto:ckmendoza.systems@gmail.com" class="btn btn-white">Book a Free Call</a>
+        <a href="mailto:ckmendoza.systems@gmail.com" class="cta-email">ckmendoza.systems@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#" class="f-logo">CK Mendoza<span>.</span></a>
+        <p class="f-sub">Automation Specialist · Zapier · Make.com · n8n · GoHighLevel<br>Philippines · Working Globally</p>
+      </div>
+      <p class="f-copy">© 2026 Franchezka Mendoza · Built for results.</p>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="proj-modal-overlay" id="projModalOverlay">
+    <div class="proj-modal" id="projModal">
+      <div class="modal-topbar">
+        <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-scroll">
+        <div class="modal-img-wrap">
+          <div class="modal-gallery" id="modalGallery"></div>
+          <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous">‹</button>
+          <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next">›</button>
+          <div class="gallery-dots" id="galleryDots"></div>
+          <button class="fullscreen-btn" id="fullscreenBtn">⛶ Fullscreen</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-header">
+            <span class="tool-badge" id="modalBadge"></span>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-tagline" id="modalTagline"></p>
+          </div>
+          <div class="modal-stats" id="modalStats"></div>
+          <div class="modal-section">
+            <p class="modal-section-title">Business Problem</p>
+            <p class="modal-problem" id="modalProblem"></p>
+          </div>
+          <div class="modal-section">
+            <p class="modal-section-title">How the Automation Works</p>
+            <ol class="modal-steps" id="modalSteps"></ol>
+          </div>
+          <div class="modal-section">
+            <p class="modal-section-title">Before &amp; After</p>
+            <div class="ba-grid">
+              <div class="ba-card ba-before">
+                <p class="ba-label">BEFORE</p>
+                <p id="modalBefore"></p>
+              </div>
+              <div class="ba-card ba-after">
+                <p class="ba-label">AFTER</p>
+                <p id="modalAfter"></p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-section">
+            <p class="modal-section-title">Tools Used</p>
+            <div class="tools-used" id="modalTools"></div>
+          </div>
+          <div class="modal-actions">
+            <a href="mailto:ckmendoza.systems@gmail.com" class="btn btn-dark">Build Similar System →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- IN-PAGE FULLSCREEN OVERLAY -->
+  <div class="img-fullscreen-overlay" id="imgFullscreenOverlay">
+    <button class="ifs-close" id="ifsClose" aria-label="Close fullscreen">✕</button>
+    <button class="ifs-nav ifs-prev" id="ifsPrev" aria-label="Previous image">‹</button>
+    <button class="ifs-nav ifs-next" id="ifsNext" aria-label="Next image">›</button>
+    <img class="ifs-img" id="ifsImg" src="" alt="" />
+  </div>
+
+  <script>
+    // ===== NAV =====
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 24);
+    });
+
+    // ===== PROJECT DATA =====
+    const projectData = {
+      'ghl-booking': {
+        title: 'Appointment Booking System',
+        tagline: 'No more back-and-forth emails. Clients book, confirm, and show up — automatically.',
+        tool: 'GoHighLevel', toolClass: 'badge-ghl',
+        images: ['../MY%20PROJECTS/GHL/appointment-booking-system.png'],
+        stats: [
+          { value: '100%', label: 'Bookings auto-confirmed' },
+          { value: '0', label: 'Scheduling emails sent manually' },
+          { value: '<3 min', label: 'Average time to book' }
+        ],
+        problem: 'Service businesses lose hours every week to the scheduling loop — "Are you free Tuesday?" "How about Thursday at 2?" Meanwhile, interested leads go cold waiting for a confirmation. Without automation, every booking is a manual job.',
+        steps: ['Client visits the booking page and selects a service and available time slot', 'GoHighLevel checks real-time calendar availability and detects the client\'s timezone', 'Confirmation email and SMS sent instantly to both client and business owner', 'Reminder sequence triggers automatically 24 hours and 1 hour before the appointment', 'If the client cancels or reschedules, the workflow updates the calendar and re-notifies both sides'],
+        before: 'Staff manually coordinate every booking via email or phone. Slots get double-booked. Clients receive late or no confirmations. No-show rate is high due to missing reminders.',
+        after: 'Clients self-book 24/7. Instant confirmations go out automatically. Reminders are sent without anyone lifting a finger. No-shows drop significantly.',
+        tools: ['GoHighLevel', 'Google Calendar', 'SMS & Email Automation']
+      },
+      'ghl-landing': {
+        title: 'HVAC Lead Generation Landing Page',
+        tagline: 'A landing page that works the night shift — capturing leads while you\'re on the job.',
+        tool: 'GoHighLevel', toolClass: 'badge-ghl',
+        images: ['../MY%20PROJECTS/GHL/simple-landing-page.png'],
+        stats: [
+          { value: '24/7', label: 'Lead capture with zero staff' },
+          { value: '<60s', label: 'Lead-to-CRM entry time' },
+          { value: '0', label: 'Manual follow-up needed' }
+        ],
+        problem: 'HVAC companies rely on referrals and word of mouth. When potential customers search online, there\'s often no dedicated page to capture their interest — so the lead calls a competitor instead.',
+        steps: ['Customer searches for HVAC services and lands on the page via ad or organic traffic', 'Page displays service packages, trust signals, and social proof to build confidence', 'Customer fills out the lead capture form with name, contact info, and service needed', 'Lead is instantly created in GHL\'s CRM with source tracking attached', 'Automated welcome message triggers to follow up within minutes while the lead is warm', 'Business owner receives an internal notification with the lead\'s full details'],
+        before: 'No dedicated landing page. Traffic from ads goes nowhere. Leads can\'t self-qualify. Owner manually responds to every inquiry hours or days later.',
+        after: 'Structured page converts visitors into leads instantly. CRM entry is automatic. Follow-up starts while the lead is still thinking about the service.',
+        tools: ['GoHighLevel Page Builder', 'GHL CRM', 'GHL Workflows']
+      },
+      'ghl-anna': {
+        title: 'AI Conversation Bot "Anna"',
+        tagline: 'Anna handles your DMs, qualifies your leads, and books appointments — while you sleep.',
+        tool: 'GoHighLevel', toolClass: 'badge-ghl',
+        images: [
+          '../MY%20PROJECTS/GHL/ConversationAI/Screenshot%20(9778).png',
+          '../MY%20PROJECTS/GHL/ConversationAI/Screenshot%20(9779).png',
+          '../MY%20PROJECTS/GHL/ConversationAI/Screenshot%20(9787).png',
+          '../MY%20PROJECTS/GHL/ConversationAI/Screenshot%20(9788).png',
+          '../MY%20PROJECTS/GHL/ConversationAI/Screenshot%20(9789).png',
+          '../MY%20PROJECTS/GHL/ConversationAI/Screenshot%20(9790).png'
+        ],
+        stats: [
+          { value: '24/7', label: 'Active on every channel' },
+          { value: '<1 min', label: 'Average response time' },
+          { value: '0', label: 'Humans needed to book' }
+        ],
+        problem: 'Leads send messages at all hours, but most businesses only respond during business hours. By the time someone replies, the lead has already moved on — or gone cold. Every unanswered message is a missed sale.',
+        steps: ['Lead sends a message on any connected channel (SMS, Facebook, Instagram, live chat)', 'Anna receives the message and identifies intent using GHL\'s Conversation AI engine', 'Anna responds with contextual, personality-driven messages that build rapport', 'When a buying signal is detected, Anna pivots the conversation toward booking', 'Appointment is created in the calendar and confirmed to the lead automatically', 'Full conversation summary and lead details are logged in the CRM'],
+        before: 'Leads go unanswered outside business hours. Follow-up is inconsistent. Booking requires back-and-forth between staff and client. Response time is measured in hours.',
+        after: 'Every lead gets an instant, human-sounding response at any time of day. Qualified leads are moved to booked — without a human ever touching the conversation.',
+        tools: ['GoHighLevel Conversation AI', 'GHL CRM', 'GHL Calendar']
+      },
+      'ghl-workflows': {
+        title: '6-Workflow Automation System',
+        tagline: 'Six automations running in parallel — so nothing in your pipeline ever stalls.',
+        tool: 'GoHighLevel', toolClass: 'badge-ghl',
+        images: [
+          '../MY%20PROJECTS/GHL/Automation-Workflow/Screenshot%20(9819).png',
+          '../MY%20PROJECTS/GHL/Automation-Workflow/Screenshot%20(9821).png',
+          '../MY%20PROJECTS/GHL/Automation-Workflow/Screenshot%20(9822).png',
+          '../MY%20PROJECTS/GHL/Automation-Workflow/Screenshot%20(9823).png',
+          '../MY%20PROJECTS/GHL/Automation-Workflow/Screenshot%20(9824).png',
+          '../MY%20PROJECTS/GHL/Automation-Workflow/Screenshot%20(9826).png',
+          '../MY%20PROJECTS/GHL/Automation-Workflow/Screenshot%20(9827).png',
+          '../MY%20PROJECTS/GHL/Automation-Workflow/Screenshot%20(9828).png',
+          '../MY%20PROJECTS/GHL/Automation-Workflow/Screenshot%20(9829).png',
+          '../MY%20PROJECTS/GHL/Automation-Workflow/Screenshot%20(9830).png'
+        ],
+        stats: [
+          { value: '100%', label: 'Lead lifecycle automated' },
+          { value: '0', label: 'Manual follow-ups required' },
+          { value: '6×', label: 'More pipeline touchpoints' }
+        ],
+        problem: 'Growing businesses can\'t keep track of every lead\'s stage. Contacts sit at "Quote Sent" for weeks. Internal tasks don\'t get created. No one gets notified when a deal moves. The CRM becomes a graveyard.',
+        steps: ['New lead enters CRM and triggers the Lead Welcome workflow — immediate follow-up sent', 'If no response after 48 hours, the No Response workflow sends a re-engagement sequence', 'When a quote is sent, the Quote Follow-Up workflow begins a multi-day check-in series', 'Approval triggers the Onboarding workflow — welcome email, intake form, and internal task creation', 'Payment received triggers the Active Client workflow — delivery milestones and check-ins sent', 'Project close triggers the Review Request workflow — automated testimonial ask goes out'],
+        before: 'Lead follow-up is inconsistent and manual. Deals stall because no one sends the next message. Internal team has no visibility on pipeline movement.',
+        after: 'Every lead is touched at the right moment. Pipeline stages auto-advance. The team gets notified automatically. No opportunity is left sitting idle.',
+        tools: ['GoHighLevel Workflows', 'GHL CRM', 'GHL Email & SMS']
+      },
+      'ghl-funnel': {
+        title: 'Payment Funnel & Purchase Page',
+        tagline: 'A complete checkout experience inside GHL — no third-party cart or manual invoicing needed.',
+        tool: 'GoHighLevel', toolClass: 'badge-ghl',
+        images: [
+          '../MY%20PROJECTS/GHL/Payments-Products%26PurchasePage(Funnel)/Screenshot%20(8877).png',
+          '../MY%20PROJECTS/GHL/Payments-Products%26PurchasePage(Funnel)/Screenshot%20(8883).png',
+          '../MY%20PROJECTS/GHL/Payments-Products%26PurchasePage(Funnel)/Screenshot%20(8884).png',
+          '../MY%20PROJECTS/GHL/Payments-Products%26PurchasePage(Funnel)/Screenshot%20(8885).png',
+          '../MY%20PROJECTS/GHL/Payments-Products%26PurchasePage(Funnel)/Screenshot%20(8886).png'
+        ],
+        stats: [
+          { value: '0', label: 'Manual invoices sent' },
+          { value: 'Instant', label: 'Post-purchase delivery' },
+          { value: '100%', label: 'Self-serve checkout' }
+        ],
+        problem: 'Small businesses either use clunky invoicing tools or lose sales because their checkout has too many steps. Clients pay via a PayPal link and then wait days for someone to manually deliver what they purchased.',
+        steps: ['Client lands on the purchase page via a link, ad, or direct outreach', 'Page displays product or service details, pricing, and trust signals', 'Client completes checkout with payment info directly inside GHL', 'Payment confirmation triggers a thank-you email with delivery details', 'If it\'s a digital product, the download or access link is sent automatically', 'Contact is tagged in CRM and moved to the "Paid" pipeline stage'],
+        before: 'Manual invoicing and manual fulfillment. Client pays, then waits for the owner to deliver. Checkout happens outside the CRM so contact data is disconnected.',
+        after: 'Self-serve checkout. Instant delivery. Client automatically tagged and moved in CRM. No invoices, no manual fulfillment, no delays.',
+        tools: ['GoHighLevel Payments', 'GHL Funnels', 'GHL Workflows', 'GHL CRM']
+      },
+      'zap-content': {
+        title: 'AI Content Repurposing Pipeline',
+        tagline: 'Record once. Get a blog post, Facebook update, and LinkedIn article — automatically.',
+        tool: 'Zapier', toolClass: 'badge-zapier',
+        images: ['../MY%20PROJECTS/ZAPIER/1%20-%20automated-content-repurposing-workflow.png'],
+        stats: [
+          { value: '3+', label: 'Content formats from 1 recording' },
+          { value: '0 hrs', label: 'Manual writing time' },
+          { value: '2', label: 'Platforms auto-published' }
+        ],
+        problem: 'Content creators and coaches produce hours of recorded content but don\'t have time to repurpose it. A 30-minute recording could be a blog post, a LinkedIn article, and a week of social posts — but without automation, it\'s just a video file sitting in a folder.',
+        steps: ['New file uploaded to a designated Google Drive folder triggers the workflow', 'Zapier sends the file to an AI transcription service and waits for the completed transcript', 'AI generates a structured blog post from the full transcript', 'AI generates a LinkedIn article version with a professional tone', 'AI generates a Facebook post version with a conversational tone', 'Content is published or saved to respective platforms automatically'],
+        before: 'Recordings sit unused. Repurposing requires hours of manual writing per piece. Social media posting is inconsistent or skipped entirely when things get busy.',
+        after: 'Every recording automatically becomes multiple pieces of content across platforms. Publishing happens with zero human input. Content calendar fills itself.',
+        tools: ['Zapier', 'Google Drive', 'AI Transcription', 'OpenAI', 'Facebook', 'LinkedIn']
+      },
+      'zap-crm': {
+        title: 'Multi-Stage CRM Lead Engagement',
+        tagline: '24 steps. 5 paths. Every lead followed up at exactly the right moment — without lifting a finger.',
+        tool: 'Zapier', toolClass: 'badge-zapier',
+        images: ['../MY%20PROJECTS/ZAPIER/2%20-%20asana-crm-lead-engagement-workflow.png'],
+        stats: [
+          { value: '100%', label: 'AI-personalized emails sent' },
+          { value: '0', label: 'Leads ever forgotten' },
+          { value: '5×', label: 'Faster pipeline movement' }
+        ],
+        problem: 'Sales teams move leads through a CRM but rarely have time to craft the right message for each stage. "No Response" leads are forgotten. "Quoted" leads hear nothing for a week. The pipeline fills up but doesn\'t convert.',
+        steps: ['Asana task status changes and Zapier detects the update in real time', 'Workflow identifies which of 5 stages the lead is in (Ready to Start, No Response, Quoted, Approved, Paid & Closed)', 'Each path triggers a different email sequence tailored to that stage\'s context', 'AI generates a personalized version of the email using the lead\'s data from the CRM', 'Email is sent automatically at the optimal time for that stage', 'CRM is updated with the activity log for full pipeline visibility'],
+        before: 'Reps write follow-up emails manually and inconsistently. Leads in "No Response" are abandoned. "Quoted" leads wait a week for a check-in. Conversion rate suffers.',
+        after: 'Every stage has an automatic, AI-personalized touchpoint. No lead is forgotten. Follow-up is consistent across the entire team. Pipeline moves faster.',
+        tools: ['Zapier', 'Asana', 'OpenAI', 'Gmail', 'CRM']
+      },
+      'zap-enrich': {
+        title: 'Automated Lead Enrichment via Apollo',
+        tagline: 'New lead enters your CRM pre-loaded with everything you need to close them.',
+        tool: 'Zapier', toolClass: 'badge-zapier',
+        images: [
+          '../MY%20PROJECTS/ZAPIER/AutomatedLeadsEnrichment/Screenshot%202026-02-23%20144047.png',
+          '../MY%20PROJECTS/ZAPIER/AutomatedLeadsEnrichment/Screenshot%202026-02-23%20144149.png'
+        ],
+        stats: [
+          { value: '<60s', label: 'Auto-enrichment time' },
+          { value: '0 min', label: 'Manual research per lead' },
+          { value: '10+', label: 'Data fields auto-filled' }
+        ],
+        problem: 'Sales teams waste 30–60 minutes per lead manually researching contact info, company size, title, and LinkedIn profile. By the time they\'ve gathered enough context to write a good email, the lead is already cold.',
+        steps: ['New contact is added to the CRM from any source', 'Zapier triggers an Apollo.io API lookup using the lead\'s email or company domain', 'Apollo returns enriched data: full name, job title, company, industry, employee count, LinkedIn URL', 'Zapier maps each enriched field and writes the data back to the correct CRM fields', 'Sales rep receives a notification that the lead is ready with full context attached'],
+        before: 'Reps Google every lead manually. CRM records are incomplete. Outreach is generic because there\'s no context. Hours spent on research that should take seconds.',
+        after: 'Every new lead arrives pre-enriched. CRM is clean and complete. Reps go straight to writing personalized outreach. Research time drops to zero.',
+        tools: ['Zapier', 'Apollo.io', 'HubSpot / Airtable / Sheets']
+      },
+      'zap-intake': {
+        title: 'Automated Lead Intake & Routing',
+        tagline: 'Lead submits a form. The right person is notified, CRM is updated, and follow-up starts — in under 60 seconds.',
+        tool: 'Zapier', toolClass: 'badge-zapier',
+        images: ['../MY%20PROJECTS/ZAPIER/Automated-Lead-Intake/Screenshot%202026-04-14%20220333.png'],
+        stats: [
+          { value: '<60s', label: 'Form to CRM entry' },
+          { value: '0', label: 'Leads lost to manual handoff' },
+          { value: 'Auto', label: 'Routed to correct owner' }
+        ],
+        problem: 'Businesses collect leads from multiple sources — website forms, ads, referrals — and someone has to manually check each source, copy the data into the CRM, and figure out who to assign it to. Leads fall through the cracks constantly.',
+        steps: ['Lead submits a form from the website, Facebook Lead Ad, or Typeform', 'Zapier captures the submission and de-duplicates it against existing CRM records', 'Lead is qualified based on form answers (industry, budget, service needed)', 'Qualified leads are routed to the correct owner or pipeline stage based on pre-set rules', 'CRM contact is created with all form fields mapped to the correct fields', 'Assigned rep receives a Slack or email notification with the lead\'s full details immediately'],
+        before: 'Form submissions pile up in email inboxes. Data entry is done manually. The wrong person gets the lead or no one does. Response time is hours or days.',
+        after: 'Every lead is captured, cleaned, categorized, and assigned in under a minute. No manual data entry. The right person is notified immediately with full context.',
+        tools: ['Zapier', 'Typeform / JotForm', 'CRM', 'Slack', 'Gmail']
+      },
+      'zap-booking': {
+        title: 'Booking & Automated Reminder System',
+        tagline: 'Client books, gets confirmed, and shows up — all without you sending a single message.',
+        tool: 'Zapier', toolClass: 'badge-zapier',
+        images: [
+          '../MY%20PROJECTS/ZAPIER/Booking%26Reminder/Screenshot%202026-04-14%20225006.png',
+          '../MY%20PROJECTS/ZAPIER/Booking%26Reminder/Screenshot%202026-04-14%20225103.png'
+        ],
+        stats: [
+          { value: '↓60%', label: 'No-show rate after launch' },
+          { value: '0', label: 'Manual reminders sent' },
+          { value: 'Instant', label: 'Confirmation after booking' }
+        ],
+        problem: 'Service businesses forget to send reminders, send them too late, or rely on the client to remember on their own. No-shows waste billable time and block calendar slots that could have been filled.',
+        steps: ['Client completes a booking through a scheduling tool like Calendly', 'Zapier detects the new booking event in real time', 'Confirmation email or SMS is sent to the client within seconds', 'A 24-hour reminder is scheduled and sent automatically', 'A 1-hour reminder fires before the appointment start time', 'If the booking is cancelled, a cancellation acknowledgment is sent and the slot is freed'],
+        before: 'Reminders are sent manually or not at all. No-shows happen without warning. Business owner spends time chasing clients before every appointment.',
+        after: 'Every booking is confirmed and reminded automatically. Clients show up prepared. No-show rate drops. Owner never touches the reminder process again.',
+        tools: ['Zapier', 'Calendly', 'Gmail', 'SMS / Twilio']
+      },
+      'make-finance': {
+        title: 'End-to-End Financial Report Automation',
+        tagline: 'When a project closes in Asana, the report is already written, formatted, and filed.',
+        tool: 'Make.com', toolClass: 'badge-make',
+        images: ['../MY%20PROJECTS/MAKE.COM/End-to-end-financial-report(asana-xero).png'],
+        stats: [
+          { value: '0', label: 'Manual spreadsheet updates' },
+          { value: 'Auto', label: 'Report generated & filed' },
+          { value: '100%', label: 'Data accuracy — no human error' }
+        ],
+        problem: 'Finance teams pull data from project management tools and accounting software separately, manually copy figures into a spreadsheet, format the report, and repeat every week. It\'s time-consuming, error-prone, and always delayed.',
+        steps: ['Asana task is marked complete, triggering the Make.com scenario', 'Make.com pulls the related invoice data from Xero via API', 'Data is iterated across all line items and formatted correctly', 'Formatted records are written to the designated Google Sheets report template', 'Report is compiled with totals and summaries calculated automatically', 'Final report file is uploaded back to Asana as an attachment on the relevant task'],
+        before: 'Finance team manually exports from Xero, re-enters data in Sheets, formats the report, and attaches it to the project task. Takes hours per reporting cycle.',
+        after: 'Task completion triggers the full process automatically. Data flows from Xero to Sheets to Asana without anyone touching it. Report is ready before anyone asks for it.',
+        tools: ['Make.com', 'Asana', 'Xero', 'Google Sheets']
+      },
+      'make-docs': {
+        title: 'Inbox-to-Drive AI Document Workflow',
+        tagline: 'Email arrives with an attachment. By the time you check your inbox, it\'s already filed, named, and logged.',
+        tool: 'Make.com', toolClass: 'badge-make',
+        images: ['../MY%20PROJECTS/MAKE.COM/automated-document-workflow.png'],
+        stats: [
+          { value: '<30s', label: 'Processing time per file' },
+          { value: '0', label: 'Manual filing steps' },
+          { value: '100%', label: 'Auto-named & categorized' }
+        ],
+        problem: 'Teams receive dozens of documents via email — contracts, invoices, applications — and someone has to open each one, figure out what it is, rename it properly, upload it to the right Drive folder, and log it. Most of the time, it just sits in the inbox.',
+        steps: ['New email with an attachment arrives in Gmail', 'Make.com detects the attachment and downloads it automatically', 'AI reads the document content and determines its type (invoice, contract, application, etc.)', 'AI generates a descriptive filename with relevant metadata (date, company, document type)', 'File is uploaded to the correct Google Drive folder based on document type', 'A log entry is added to Google Sheets and a confirmation email is sent to the requestor'],
+        before: 'Attachments pile up in email. Manual filing takes 5–10 minutes per document. Files are inconsistently named and hard to find later. Nothing gets logged.',
+        after: 'Every attachment is processed automatically. Files are AI-named, correctly categorized, and searchable in Drive. The log is always current. Zero inbox clutter.',
+        tools: ['Make.com', 'Gmail', 'OpenAI', 'Google Drive', 'Google Sheets']
+      },
+      'make-social': {
+        title: 'AI Social Media Content System — 6 Platforms',
+        tagline: 'One row in a spreadsheet. One hour later, your business has posted on six platforms.',
+        tool: 'Make.com', toolClass: 'badge-make',
+        images: ['../MY%20PROJECTS/MAKE.COM/automated-social-media-content-system.png'],
+        stats: [
+          { value: '6', label: 'Platforms published simultaneously' },
+          { value: '0', label: 'Manual writing required' },
+          { value: '1', label: 'Brief triggers everything' }
+        ],
+        problem: 'Posting consistently to multiple social platforms is a full-time job. Every platform needs different copy length, tone, and format. Most businesses either hire a social media manager or post inconsistently — or both.',
+        steps: ['Team adds a content brief (topic, message, target audience) to a Google Sheet row', 'Make.com triggers and sends the brief to OpenAI to generate tailored copy for each channel', 'Image prompt is generated and sent to an AI image generation tool', 'Content package (copy + image) is assembled per platform with correct formatting', 'Posts are scheduled or published to Facebook, Instagram, LinkedIn, Tumblr, X, and Pinterest', 'Log entry is added to the Sheet with post IDs, timestamps, and platform confirmation'],
+        before: 'Social media requires dedicated headcount or constant manual effort. Copy has to be rewritten per platform. Posting gets skipped when things get busy.',
+        after: 'One content brief triggers six posts. AI handles the copy and images. Publishing is automatic. Social presence stays consistent without a full-time hire.',
+        tools: ['Make.com', 'Google Sheets', 'OpenAI', 'Facebook', 'Instagram', 'LinkedIn', 'X', 'Pinterest', 'Tumblr']
+      },
+      'make-screening': {
+        title: 'AI-Powered Candidate Screening',
+        tagline: 'Resumes come in. AI scores them. Your shortlist is ready before you finish your coffee.',
+        tool: 'Make.com', toolClass: 'badge-make',
+        images: ['../MY%20PROJECTS/MAKE.COM/candidate-screening-hiring-automation.png'],
+        stats: [
+          { value: '<2 min', label: 'Per resume screened' },
+          { value: '100%', label: 'Of applicants auto-emailed' },
+          { value: '↓80%', label: 'Reduction in time-to-hire' }
+        ],
+        problem: 'Hiring teams spend hours reading resumes that don\'t meet basic requirements. The manual review process delays hiring, burns out HR staff, and still misses good candidates buried in a pile of applications.',
+        steps: ['New application row is added to Google Sheets with name, email, and resume link', 'Make.com downloads the resume PDF from the provided link', 'PDF.co converts the PDF content to readable text', 'OpenAI evaluates the candidate against predefined criteria (skills, experience, education)', 'AI score and summary are written back to the Google Sheets row', 'Candidate receives either an interview invitation or a professional rejection email — automatically'],
+        before: 'HR manually downloads each resume, reads it, scores it against a checklist, then composes individual emails. 2–4 hours per batch of applicants.',
+        after: 'Applications are scored and routed in minutes. HR reviews only the shortlist. Every applicant gets a response. Time-to-hire shrinks significantly.',
+        tools: ['Make.com', 'Google Sheets', 'PDF.co', 'OpenAI', 'Gmail']
+      },
+      'make-pdf': {
+        title: 'AI PDF Data Extraction',
+        tagline: 'Stop manually copying numbers out of PDFs. The system reads them and puts them exactly where you need them.',
+        tool: 'Make.com', toolClass: 'badge-make',
+        images: ['../MY%20PROJECTS/MAKE.COM/ExtractingPDFDataWithAI.png'],
+        stats: [
+          { value: '<60s', label: 'Extraction time per PDF' },
+          { value: '0', label: 'Manual data entry needed' },
+          { value: '100%', label: 'Extraction accuracy rate' }
+        ],
+        problem: 'Businesses receive data in PDF format — invoices, applications, reports — and someone manually copies key fields into a spreadsheet or system. It\'s slow, error-prone, and scales terribly as volume grows.',
+        steps: ['New PDF arrives via email, Google Drive, or form submission', 'Make.com detects the file and sends it to an AI extraction module', 'AI identifies and extracts the required fields (amounts, dates, names, IDs, and more)', 'Extracted data is validated and structured into clean, usable format', 'Clean data is written to the target system (Google Sheets, Airtable, CRM, or database)', 'Source PDF is archived and the requestor is notified of successful processing'],
+        before: 'Someone opens each PDF, manually reads and copies the data into a spreadsheet. One wrong number causes downstream errors. Hours spent on a task that should take seconds.',
+        after: 'PDFs are processed automatically. Structured data lands in the right system. No manual copying. No transcription errors. Scales to any volume without adding headcount.',
+        tools: ['Make.com', 'OpenAI', 'Google Drive', 'Google Sheets', 'Gmail']
+      },
+      'n8n-messenger': {
+        title: 'Facebook Messenger AI Chatbot',
+        tagline: 'Your Messenger inbox answers itself — with context, memory, and the right information every time.',
+        tool: 'n8n', toolClass: 'badge-n8n',
+        images: ['../MY%20PROJECTS/N8N/facebook-messenger-chatbot.png'],
+        stats: [
+          { value: '<5s', label: 'Average response time' },
+          { value: '24/7', label: 'Active without staff' },
+          { value: '0', label: 'Unanswered messages' }
+        ],
+        problem: 'Businesses get the same 10 questions asked hundreds of times on Messenger. Someone has to be available to answer — or questions pile up and trust erodes. Worse, context is lost between conversations so every chat starts from scratch.',
+        steps: ['Customer sends a message on Facebook Messenger', 'Webhook delivers the message to n8n in real time', 'Message is filtered and intent is identified', 'n8n retrieves relevant content from a knowledge base document using semantic search', 'Gemini AI Agent composes a contextual, accurate reply based on retrieved content', 'Response is delivered back to Messenger with persistent conversation memory maintained'],
+        before: 'Business owner or staff manually answers every Messenger inquiry. Same questions answered repeatedly. After-hours messages go unanswered for hours or days.',
+        after: 'Every message gets an instant, accurate, context-aware reply — day or night. Staff handles only edge cases and escalations. Customer experience is consistent and fast.',
+        tools: ['n8n', 'Facebook Messenger API', 'Google Gemini', 'Webhook']
+      },
+      'n8n-jobs': {
+        title: 'AI Job Scraper + Resume Optimizer',
+        tagline: 'The system finds relevant job listings and rewrites your resume to match each one — automatically.',
+        tool: 'n8n', toolClass: 'badge-n8n',
+        images: ['../MY%20PROJECTS/N8N/job-scraper-resume-optimizer.png'],
+        stats: [
+          { value: '↓80%', label: 'Time saved per application' },
+          { value: 'Auto', label: 'Job discovery & matching' },
+          { value: '100%', label: 'Per-role tailored resume' }
+        ],
+        problem: 'Job seekers and recruiters spend hours manually searching for openings, reviewing requirements, and rewriting resumes or candidate profiles to fit each role. Most resume submissions are generic and don\'t match the JD\'s language.',
+        steps: ['n8n schedule triggers a scraping run against target job boards or search queries', 'Relevant listings are extracted and filtered by role type, location, and keywords', 'Each job description is analyzed for required skills, experience, and language patterns', 'AI compares the requirements against the base resume or candidate profile', 'Tailored resume version is generated to match that specific role\'s criteria and terminology', 'Results are logged to a spreadsheet with job link, company, match score, and generated resume draft'],
+        before: 'Job searching is fully manual. Resume is generic and doesn\'t reflect the JD\'s language. Applications take 30–60 minutes each to customize properly.',
+        after: 'The system surfaces relevant openings automatically. Each application gets a customized resume. Time per application drops from an hour to minutes.',
+        tools: ['n8n', 'Web Scraping', 'OpenAI', 'Google Sheets']
+      },
+      'n8n-newsletter': {
+        title: 'Autonomous AI Newsletter System',
+        tagline: 'A multi-agent system that researches, writes, and assembles your newsletter — no writer required.',
+        tool: 'n8n', toolClass: 'badge-n8n',
+        images: ['../MY%20PROJECTS/N8N/AINewsletterSystem/AINewsletterSystem.jpg'],
+        stats: [
+          { value: '0 hrs', label: 'Manual writing time' },
+          { value: '100%', label: 'Published on schedule' },
+          { value: '1-click', label: 'Ready to send from Gmail' }
+        ],
+        problem: 'Newsletters are one of the highest-ROI channels, but they require consistent effort to produce. Most businesses either publish inconsistently or spend hours every week writing content from scratch — and both hurt audience trust.',
+        steps: ['Schedule trigger fires at the configured newsletter cadence (weekly, biweekly, etc.)', 'Planning Agent researches current topics and structures the edition outline', 'Section Writer Agents draft each section in parallel (news, tips, spotlight, CTA)', 'Each draft is reviewed by a quality-check prompt and refined if needed', 'Aggregator Agent compiles all sections into a formatted, ready-to-send newsletter', 'Final draft is created in Gmail — editor reviews, clicks send, done'],
+        before: 'Newsletter writing takes 3–5 hours per edition. Publishing cadence is inconsistent. Content quality depends on who has time that week.',
+        after: 'Newsletter is researched, written, and assembled autonomously on schedule. Consistent cadence maintained without manual effort. Editor just reviews and clicks send.',
+        tools: ['n8n', 'OpenAI', 'Gmail', 'Scheduling Trigger']
+      },
+      'n8n-email': {
+        title: 'Autonomous Email Triage & Response Agent',
+        tagline: 'GPT-4.1 reads every email and decides what to do with it — so you don\'t have to.',
+        tool: 'n8n', toolClass: 'badge-n8n',
+        images: ['../MY%20PROJECTS/N8N/AutonomousEmailAgent/Autonomous%20Email%20Agent.jpg'],
+        stats: [
+          { value: '0', label: 'Inbox clutter remaining' },
+          { value: 'Auto', label: 'Support emails replied' },
+          { value: '100%', label: 'Emails classified & handled' }
+        ],
+        problem: 'Inboxes are overwhelming. Important emails get buried under newsletters, receipts, and low-priority messages. Most people spend 1–2 hours a day just triaging — and still miss things that matter.',
+        steps: ['New email arrives in Gmail and triggers the n8n workflow', 'GPT-4.1 reads the email and classifies it into one of four categories: Support, Finance, Priority, or Promotions', 'Support emails receive an immediate, context-aware auto-reply', 'Finance emails are flagged and forwarded to the appropriate team member', 'Priority emails get an AI-drafted response added as a Gmail draft for quick review and send', 'Promotions are automatically archived — inbox stays clean without any manual action'],
+        before: 'Inbox is a chaotic mix of everything. Owner spends 1–2 hours daily just triaging. Important emails are delayed. Support questions sit unanswered.',
+        after: 'Every email is classified and handled immediately. Support is auto-replied. Priority items are draft-ready. Promotions never reach the inbox. Attention goes only to what matters.',
+        tools: ['n8n', 'GPT-4.1 (OpenAI)', 'Gmail']
+      },
+      'n8n-resume': {
+        title: 'Intelligent Resume Screening System',
+        tagline: 'Resumes land in your inbox and surface in your database as evaluated candidates — fully automatically.',
+        tool: 'n8n', toolClass: 'badge-n8n',
+        images: ['../MY%20PROJECTS/N8N/Intelligent%20ResumeScreening%26CandidateEvaluationSystem/Screenshot%202026-04-30%20230741.png'],
+        stats: [
+          { value: '↓70%', label: 'Reduction in time-to-hire' },
+          { value: '100%', label: 'Resumes auto-evaluated' },
+          { value: '0', label: 'Manual screening steps' }
+        ],
+        problem: 'Recruiting teams receive resumes in their email and manually open each attachment, read it, assess fit, and copy notes into a tracker. It\'s a 30–60 minute task per resume, and the process doesn\'t scale when hundreds of applications arrive.',
+        steps: ['Resume arrives in Gmail as an email attachment', 'n8n detects the attachment and uploads the file to Google Drive automatically', 'Text is extracted from the PDF resume for processing', 'AI Recruiter Agent evaluates the candidate against the job requirements', 'Structured candidate data (name, skills, experience, fit score, summary) is compiled', 'Data is appended to a candidate database — ready for recruiter review as a ranked shortlist'],
+        before: 'Recruiter opens every email, downloads every attachment, reads every resume, and manually fills in a tracker. 100 applications = a full week\'s work.',
+        after: 'Every resume is processed, evaluated, and logged automatically. Recruiter opens the database and sees a ranked shortlist ready for interviews. Time-to-hire drops dramatically.',
+        tools: ['n8n', 'Gmail', 'Google Drive', 'OpenAI', 'Google Sheets / Airtable']
+      }
+    };
+
+    // ===== SYSTEMS LIST (desktop window rows) =====
+    const systemsList = [
+      { id: 'ghl-booking',   cat: 'leadgen',   metrics: [{c:'purple',v:'100%',l:'auto-confirmed'},{c:'orange',v:'0',l:'manual emails'},{c:'blue',v:'<3 min',l:'to book'}] },
+      { id: 'ghl-landing',   cat: 'leadgen',   metrics: [{c:'purple',v:'24/7',l:'lead capture'},{c:'orange',v:'<60s',l:'lead to CRM'},{c:'blue',v:'0',l:'manual follow-up'}] },
+      { id: 'ghl-anna',      cat: 'ai-agents', metrics: [{c:'purple',v:'24/7',l:'always active'},{c:'orange',v:'<1 min',l:'response time'},{c:'blue',v:'0',l:'humans needed'}] },
+      { id: 'ghl-workflows', cat: 'leadgen',   metrics: [{c:'purple',v:'100%',l:'lifecycle covered'},{c:'orange',v:'0',l:'leads forgotten'},{c:'blue',v:'6×',l:'more touchpoints'}] },
+      { id: 'ghl-funnel',    cat: 'sales',     metrics: [{c:'purple',v:'0',l:'manual invoices'},{c:'orange',v:'Instant',l:'delivery'},{c:'blue',v:'100%',l:'self-serve'}] },
+      { id: 'zap-content',   cat: 'content',   metrics: [{c:'purple',v:'3+',l:'formats per upload'},{c:'orange',v:'0 hrs',l:'writing time'},{c:'blue',v:'2',l:'platforms posted'}] },
+      { id: 'zap-crm',       cat: 'leadgen',   metrics: [{c:'purple',v:'100%',l:'AI-personalized'},{c:'orange',v:'0',l:'leads forgotten'},{c:'blue',v:'5×',l:'faster follow-up'}] },
+      { id: 'zap-enrich',    cat: 'leadgen',   metrics: [{c:'purple',v:'<60s',l:'enrichment time'},{c:'orange',v:'0 min',l:'manual research'},{c:'blue',v:'10+',l:'fields auto-filled'}] },
+      { id: 'zap-intake',    cat: 'leadgen',   metrics: [{c:'purple',v:'<60s',l:'form to CRM'},{c:'orange',v:'0',l:'leads lost'},{c:'blue',v:'Auto',l:'owner notified'}] },
+      { id: 'zap-booking',   cat: 'sales',     metrics: [{c:'purple',v:'↓60%',l:'no-show rate'},{c:'orange',v:'0',l:'manual reminders'},{c:'blue',v:'Instant',l:'confirmation'}] },
+      { id: 'make-finance',  cat: 'finance',   metrics: [{c:'purple',v:'0',l:'manual updates'},{c:'orange',v:'Auto',l:'report filed'},{c:'blue',v:'100%',l:'data accuracy'}] },
+      { id: 'make-docs',     cat: 'finance',   metrics: [{c:'purple',v:'<30s',l:'per document'},{c:'orange',v:'0',l:'manual filing'},{c:'blue',v:'100%',l:'auto-named'}] },
+      { id: 'make-social',   cat: 'content',   metrics: [{c:'purple',v:'6',l:'platforms posted'},{c:'orange',v:'0',l:'manual writing'},{c:'blue',v:'1',l:'brief triggers all'}] },
+      { id: 'make-screening',cat: 'hiring',    metrics: [{c:'purple',v:'<2 min',l:'per resume'},{c:'orange',v:'100%',l:'applicants emailed'},{c:'blue',v:'↓80%',l:'time to hire'}] },
+      { id: 'make-pdf',      cat: 'finance',   metrics: [{c:'purple',v:'<60s',l:'extraction time'},{c:'orange',v:'0',l:'manual entry'},{c:'blue',v:'100%',l:'accuracy rate'}] },
+      { id: 'n8n-messenger', cat: 'ai-agents', metrics: [{c:'purple',v:'<5s',l:'response time'},{c:'orange',v:'24/7',l:'always active'},{c:'blue',v:'0',l:'staff needed'}] },
+      { id: 'n8n-jobs',      cat: 'hiring',    metrics: [{c:'purple',v:'↓80%',l:'time per app'},{c:'orange',v:'Auto',l:'job discovery'},{c:'blue',v:'100%',l:'tailored resumes'}] },
+      { id: 'n8n-newsletter',cat: 'content',   metrics: [{c:'purple',v:'0 hrs',l:'writing time'},{c:'orange',v:'100%',l:'on schedule'},{c:'blue',v:'1-click',l:'ready to send'}] },
+      { id: 'n8n-email',     cat: 'ai-agents', metrics: [{c:'purple',v:'0',l:'inbox clutter'},{c:'orange',v:'Auto',l:'support replied'},{c:'blue',v:'100%',l:'emails classified'}] },
+      { id: 'n8n-resume',    cat: 'hiring',    metrics: [{c:'purple',v:'↓70%',l:'time to hire'},{c:'orange',v:'100%',l:'resumes evaluated'},{c:'blue',v:'0',l:'manual screening'}] }
+    ];
+
+    const toolBadgeMap = {
+      'badge-ghl': 'stb-ghl', 'badge-zapier': 'stb-zapier',
+      'badge-make': 'stb-make', 'badge-n8n': 'stb-n8n'
+    };
+
+    // ===== DESKTOP WINDOW =====
+    let activeProjectId = systemsList[0].id;
+    let previewCurrentIdx = 0;
+    let previewCurrentImgs = [];
+
+    function setPreviewImage() {
+      const imgEl = document.getElementById('previewImg');
+      const counter = document.getElementById('previewImgCounter');
+      const prevBtn = document.getElementById('previewNavPrev');
+      const nextBtn = document.getElementById('previewNavNext');
+      imgEl.src = previewCurrentImgs[previewCurrentIdx];
+      const multi = previewCurrentImgs.length > 1;
+      counter.style.display = multi ? 'block' : 'none';
+      prevBtn.style.display = multi ? 'flex' : 'none';
+      nextBtn.style.display = multi ? 'flex' : 'none';
+      if (multi) {
+        counter.textContent = (previewCurrentIdx + 1) + ' / ' + previewCurrentImgs.length;
+        prevBtn.style.opacity = previewCurrentIdx === 0 ? '0.35' : '1';
+        nextBtn.style.opacity = previewCurrentIdx === previewCurrentImgs.length - 1 ? '0.35' : '1';
+      }
+    }
+
+    function buildDesktopList(cat) {
+      const list = document.getElementById('desktopList');
+      const items = cat === 'all' ? systemsList : systemsList.filter(s => s.cat === cat);
+      if (!items.length) { list.innerHTML = '<p style="padding:24px;color:#999;font-size:13px;">No systems in this category.</p>'; return; }
+
+      list.innerHTML = items.map((s, i) => {
+        const p = projectData[s.id];
+        const tbClass = toolBadgeMap[p.toolClass] || '';
+        return `<div class="sys-row${i === 0 ? ' active' : ''}" data-project="${s.id}" tabindex="0" role="button">
+          <div class="sys-row-top">
+            <span class="sys-name">${p.title}</span>
+            <span class="sys-tool-badge ${tbClass}">${p.tool}</span>
+          </div>
+          <div class="sys-row-metrics">
+            ${s.metrics.map(m => `<span class="m-pill mp-${m.c}"><strong>${m.v}</strong> <em>${m.l}</em></span>`).join('')}
+          </div>
+        </div>`;
+      }).join('');
+
+      const firstId = items[0].id;
+      activeProjectId = firstId;
+      updatePreview(firstId);
+
+      list.querySelectorAll('.sys-row').forEach(row => {
+        row.addEventListener('click', () => {
+          list.querySelectorAll('.sys-row').forEach(r => r.classList.remove('active'));
+          row.classList.add('active');
+          activeProjectId = row.dataset.project;
+          if (window.innerWidth <= 900) {
+            openModal(activeProjectId);
+          } else {
+            updatePreview(activeProjectId);
+          }
+        });
+        row.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') row.click(); });
+      });
+    }
+
+    function updatePreview(id) {
+      const p = projectData[id];
+      if (!p) return;
+      previewCurrentImgs = p.images;
+      previewCurrentIdx = 0;
+      setPreviewImage();
+      document.getElementById('previewImg').alt = p.title;
+      const badge = document.getElementById('previewBadge');
+      badge.textContent = p.tool;
+      badge.className = 'preview-tool-badge ' + p.toolClass;
+      document.getElementById('previewName').textContent = p.title;
+      document.getElementById('previewTagline').textContent = p.tagline;
+      const statColors = ['mp-purple', 'mp-orange', 'mp-blue'];
+      document.getElementById('previewStats').innerHTML = p.stats.map((s, i) =>
+        `<div class="prev-stat ${statColors[i]}"><div class="prev-stat-val">${s.value}</div><div class="prev-stat-lbl">${s.label}</div></div>`
+      ).join('');
+      document.getElementById('previewTools').innerHTML = p.tools.slice(0, 4).map(t =>
+        `<span class="prev-tool-tag">${t}</span>`
+      ).join('');
+      document.getElementById('previewViewBtn').dataset.project = id;
+    }
+
+    document.querySelectorAll('.dcat-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.dcat-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        buildDesktopList(btn.dataset.cat);
+      });
+    });
+
+    document.getElementById('previewViewBtn').addEventListener('click', function () {
+      openModal(this.dataset.project);
+    });
+
+    document.getElementById('previewNavPrev').addEventListener('click', function() {
+      if (previewCurrentIdx > 0) { previewCurrentIdx--; setPreviewImage(); }
+    });
+    document.getElementById('previewNavNext').addEventListener('click', function() {
+      if (previewCurrentIdx < previewCurrentImgs.length - 1) { previewCurrentIdx++; setPreviewImage(); }
+    });
+
+    buildDesktopList('all');
+
+    // ===== MODAL =====
+    const overlay = document.getElementById('projModalOverlay');
+    const modalScroll = document.getElementById('projModal').querySelector('.modal-scroll');
+    const ifsOverlay = document.getElementById('imgFullscreenOverlay');
+
+    let currentGalleryIdx = 0;
+    let currentGalleryImgs = [];
+
+    function openModal(id) {
+      const p = projectData[id];
+      if (!p) return;
+
+      document.getElementById('modalBadge').textContent = p.tool;
+      document.getElementById('modalBadge').className = 'tool-badge ' + p.toolClass;
+      document.getElementById('modalTitle').textContent = p.title;
+      document.getElementById('modalTagline').textContent = p.tagline;
+
+      const statColors = ['mstat-purple', 'mstat-orange', 'mstat-blue'];
+      document.getElementById('modalStats').innerHTML = p.stats.map((s, i) =>
+        `<div class="mstat ${statColors[i]}"><div class="mstat-value">${s.value}</div><div class="mstat-label">${s.label}</div></div>`
+      ).join('');
+
+      document.getElementById('modalProblem').textContent = p.problem;
+      document.getElementById('modalSteps').innerHTML = p.steps.map(s => `<li>${s}</li>`).join('');
+      document.getElementById('modalBefore').textContent = p.before;
+      document.getElementById('modalAfter').textContent = p.after;
+      document.getElementById('modalTools').innerHTML = p.tools.map(t => `<span>${t}</span>`).join('');
+
+      currentGalleryImgs = p.images;
+      currentGalleryIdx = 0;
+      buildGallery();
+
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      modalScroll.scrollTop = 0;
+      document.addEventListener('keydown', handleEscape);
+    }
+
+    function buildGallery() {
+      const gallery = document.getElementById('modalGallery');
+      const dots = document.getElementById('galleryDots');
+      const prev = document.getElementById('galleryPrev');
+      const next = document.getElementById('galleryNext');
+      const multi = currentGalleryImgs.length > 1;
+
+      gallery.innerHTML = currentGalleryImgs.map((src, i) =>
+        `<img class="modal-gallery-img${i === 0 ? ' active' : ''}" src="${src}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}" />`
+      ).join('');
+
+      dots.innerHTML = multi ? currentGalleryImgs.map((_, i) =>
+        `<span class="gallery-dot${i === 0 ? ' active' : ''}" data-idx="${i}"></span>`
+      ).join('') : '';
+
+      prev.style.display = multi ? 'flex' : 'none';
+      next.style.display = multi ? 'flex' : 'none';
+      dots.style.display = multi ? 'flex' : 'none';
+
+      dots.querySelectorAll('.gallery-dot').forEach(dot => {
+        dot.addEventListener('click', () => goToSlide(parseInt(dot.dataset.idx)));
+      });
+
+      updateGalleryArrows();
+    }
+
+    function goToSlide(idx) {
+      const imgs = document.querySelectorAll('.modal-gallery-img');
+      const dots = document.querySelectorAll('.gallery-dot');
+      if (imgs[currentGalleryIdx]) imgs[currentGalleryIdx].classList.remove('active');
+      if (dots[currentGalleryIdx]) dots[currentGalleryIdx].classList.remove('active');
+      currentGalleryIdx = idx;
+      if (imgs[currentGalleryIdx]) imgs[currentGalleryIdx].classList.add('active');
+      if (dots[currentGalleryIdx]) dots[currentGalleryIdx].classList.add('active');
+      updateGalleryArrows();
+    }
+
+    function updateGalleryArrows() {
+      document.getElementById('galleryPrev').style.opacity = currentGalleryIdx === 0 ? '0.35' : '1';
+      document.getElementById('galleryNext').style.opacity = currentGalleryIdx === currentGalleryImgs.length - 1 ? '0.35' : '1';
+    }
+
+    document.getElementById('galleryPrev').addEventListener('click', () => {
+      if (currentGalleryIdx > 0) goToSlide(currentGalleryIdx - 1);
+    });
+
+    document.getElementById('galleryNext').addEventListener('click', () => {
+      if (currentGalleryIdx < currentGalleryImgs.length - 1) goToSlide(currentGalleryIdx + 1);
+    });
+
+    // Fullscreen — in-page overlay
+    function updateIfsState() {
+      const ifsImg = document.getElementById('ifsImg');
+      const prev = document.getElementById('ifsPrev');
+      const next = document.getElementById('ifsNext');
+      ifsImg.src = currentGalleryImgs[currentGalleryIdx];
+      const multi = currentGalleryImgs.length > 1;
+      prev.style.display = multi ? 'flex' : 'none';
+      next.style.display = multi ? 'flex' : 'none';
+      if (multi) {
+        prev.style.opacity = currentGalleryIdx === 0 ? '0.35' : '1';
+        next.style.opacity = currentGalleryIdx === currentGalleryImgs.length - 1 ? '0.35' : '1';
+      }
+    }
+
+    document.getElementById('fullscreenBtn').addEventListener('click', () => {
+      updateIfsState();
+      ifsOverlay.classList.add('open');
+    });
+
+    document.getElementById('ifsPrev').addEventListener('click', e => {
+      e.stopPropagation();
+      if (currentGalleryIdx > 0) { goToSlide(currentGalleryIdx - 1); updateIfsState(); }
+    });
+
+    document.getElementById('ifsNext').addEventListener('click', e => {
+      e.stopPropagation();
+      if (currentGalleryIdx < currentGalleryImgs.length - 1) { goToSlide(currentGalleryIdx + 1); updateIfsState(); }
+    });
+
+    document.getElementById('ifsClose').addEventListener('click', () => ifsOverlay.classList.remove('open'));
+    ifsOverlay.addEventListener('click', e => { if (e.target === ifsOverlay) ifsOverlay.classList.remove('open'); });
+
+    // Keyboard left/right arrows — fullscreen, modal gallery, and preview pane
+    document.addEventListener('keydown', function(e) {
+      if (ifsOverlay.classList.contains('open')) {
+        if (e.key === 'ArrowLeft' && currentGalleryIdx > 0) { goToSlide(currentGalleryIdx - 1); updateIfsState(); }
+        else if (e.key === 'ArrowRight' && currentGalleryIdx < currentGalleryImgs.length - 1) { goToSlide(currentGalleryIdx + 1); updateIfsState(); }
+        return;
+      }
+      if (overlay.classList.contains('open')) return;
+      if (window.innerWidth <= 900) return;
+      if (previewCurrentImgs.length <= 1) return;
+      if (e.key === 'ArrowLeft' && previewCurrentIdx > 0) {
+        previewCurrentIdx--;
+        setPreviewImage();
+      } else if (e.key === 'ArrowRight' && previewCurrentIdx < previewCurrentImgs.length - 1) {
+        previewCurrentIdx++;
+        setPreviewImage();
+      }
+    });
+
+    function closeModal() {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', handleEscape);
+    }
+
+    function handleEscape(e) {
+      if (e.key === 'Escape') {
+        if (ifsOverlay.classList.contains('open')) ifsOverlay.classList.remove('open');
+        else closeModal();
+      }
+    }
+
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+
+    // ===== SMOOTH SCROLL =====
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+
+    // ===== CHAT WIDGET =====
+    (function () {
+      const conversations = [
+        { user: "What tasks can you automate for me?", bot: "Lead follow-up, CRM updates, email sequences, report generation, document filing — if your team does it manually and repeatedly, I can automate it.", tag: "⚡ Workflow Identified" },
+        { user: "How quickly can you build it?", bot: "Most automations are ready in 7–14 days. Simple ones faster. I always start with whatever saves you the most time first.", tag: "🗓 Timeline Set" },
+        { user: "Can you connect my existing tools?", bot: "Yes — Zapier, Make.com, n8n, and GoHighLevel connect to 1,000+ apps. Tell me your stack and I'll close the gaps.", tag: "🔗 Tools Connected" },
+        { user: "Do you build AI chatbots too?", bot: "Absolutely. I build AI agents that qualify leads, answer FAQs, and book appointments — running 24/7 without you lifting a finger.", tag: "🤖 Agent Ready" }
+      ];
+      let idx = 0;
+      function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
+      async function runConvo() {
+        const body = document.getElementById('cwBody');
+        if (!body) return;
+        const convo = conversations[idx % conversations.length]; idx++;
+        body.innerHTML = '';
+        await wait(500);
+        const um = document.createElement('div'); um.className = 'msg-user'; um.textContent = convo.user; body.appendChild(um);
+        await wait(800);
+        const typing = document.createElement('div'); typing.className = 'msg-typing';
+        typing.innerHTML = '<span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>';
+        body.appendChild(typing); await wait(1800); typing.remove();
+        const bm = document.createElement('div'); bm.className = 'msg-bot'; bm.textContent = convo.bot; body.appendChild(bm);
+        await wait(700);
+        const tag = document.createElement('div'); tag.className = 'msg-tag'; tag.textContent = convo.tag; body.appendChild(tag);
+        await wait(3200); runConvo();
+      }
+      runConvo();
+    })();
+
+    // ===== DARK MODE =====
+    (function () {
+      const toggle = document.getElementById('darkToggle');
+      toggle.addEventListener('click', () => {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('theme', isDark ? 'light' : 'dark');
+      });
+    })();
+
+    // ===== HAMBURGER MENU =====
+    (function () {
+      const btn  = document.getElementById('hamBtn');
+      const menu = document.getElementById('mobileNav');
+      btn.addEventListener('click', () => {
+        const open = btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(open));
+        menu.classList.toggle('open', open);
+      });
+      menu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          btn.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          menu.classList.remove('open');
+        });
+      });
+      document.addEventListener('click', e => {
+        if (!btn.contains(e.target) && !menu.contains(e.target) && menu.classList.contains('open')) {
+          btn.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          menu.classList.remove('open');
+        }
+      });
+    })();
+
+    // ===== SCROLL TO TOP =====
+    (function () {
+      const btn = document.getElementById('scrollTop');
+      window.addEventListener('scroll', () => {
+        btn.classList.toggle('visible', window.scrollY > 400);
+      }, { passive: true });
+      btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    })();
+
+    // ===== NUMBER COUNTERS =====
+    (function () {
+      const nums = document.querySelectorAll('.impact-num[data-count]');
+      if (!nums.length) return;
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting && !e.target.dataset.counted) {
+            e.target.dataset.counted = '1';
+            const el = e.target;
+            const target = +el.dataset.count;
+            const prefix = el.dataset.prefix || '';
+            const suffix = el.dataset.suffix || '';
+            const dur = 1600;
+            const t0 = performance.now();
+            (function tick(now) {
+              const p = Math.min((now - t0) / dur, 1);
+              const ease = 1 - Math.pow(1 - p, 3);
+              el.textContent = prefix + Math.round(ease * target) + suffix;
+              if (p < 1) {
+                requestAnimationFrame(tick);
+              } else {
+                el.textContent = prefix + target + suffix;
+                el.classList.add('animate-done');
+                setTimeout(() => el.classList.remove('animate-done'), 500);
+              }
+            })(performance.now());
+          }
+        });
+      }, { threshold: 0.4 });
+      nums.forEach(n => obs.observe(n));
+    })();
+  </script>
+</body>
+</html>
