@@ -20,19 +20,19 @@
 → `Documents/portfolio-website/index.html` + `styles.css`
 **Status: Fully built + polished.** All sections live and functional.
 
-**Sections:** Nav · Hero · Tools Marquee · Pain · Services · Impact · Projects (desktop window) · About · My Process · Results · CTA · Footer
+**Sections:** Nav · Hero · Tools Marquee · Pain · Services · Impact · Projects (desktop window) · About · Process · Results · CTA · Footer
 
 **Section highlights:**
-- **Nav:** Services · Projects · About · My Process · Results · Contact (desktop + mobile hamburger)
+- **Nav:** Services · Projects · About · Process · Results (desktop + mobile hamburger; no Contact — Book a Call CTA covers it)
 - **Hero:** "Stop Running Your Business on Manual." — animated chat widget, CTA to book a strategy call
 - **Tools Marquee:** Auto-scrolling — Zapier · Make · n8n · GHL · Asana · Trello · Slack · Notion · Xero · Claude · OpenAI · Gemini · ElevenLabs · Airtable · GitHub · OpenRouter · Grok · Perplexity
-- **Services:** GoHighLevel Systems · Zapier Automation · Make.com Workflows · n8n AI Agents
+- **Services:** eyebrow "WHAT I BUILD", heading "Automation, Done Right"; cards: GoHighLevel Systems · Zapier Automation · Make.com Workflows · n8n AI Agents
 - **Impact stats:** 80% task reduction · <2 min lead follow-up · 10+ hrs/week saved · 5× more leads nurtured; headline "Less Manual Work. More Pipeline. Always On."; animated counters replay on every scroll in both directions (IntersectionObserver + cancelAnimationFrame, no once-only lock)
-- **Projects:** 20 systems across 6 categories — desktop-window UI with sidebar filter, list, preview pane, full modal per project (problem · steps · before/after · tools · gallery); heading is "Systems Built to Perform" (no trailing period); modal gallery arrows fixed (symmetrical at left/right 10px, images have pointer-events: none)
+- **Projects:** eyebrow "MY WORK", heading "Systems Built to Deliver"; 20 systems across 6 categories — desktop-window UI with sidebar filter, list, preview pane, full modal per project (problem · steps · before/after · tools · gallery); modal gallery arrows + keyboard left/right arrows navigate images; gallery arrows fixed (symmetrical at left/right 10px, images have pointer-events: none)
 - **About:** VA-turned-Automation Specialist, Philippines, 3+ years ops; uses `headshot-gray-bg.jpg`
-- **My Process** `id="process"`: 4-step process — Discovery Call (free 30 min) → System Design → Build & Test → Launch & Handoff (30-day support); 4-col grid collapses 2-col @ 1024px, 1-col @ 768px
-- **Contact/CTA:** All booking CTAs → `https://calendly.com/ckmendoza-systems`; email `ckmendoza.systems@gmail.com` stays as mailto; **pending:** swap to direct event-type URL once Chezka provides the slug
-- **Footer:** 3-column — (1) brand logo + tagline + availability badge + location + LinkedIn/Upwork icons (subtle purple-to-blue gradient bg, purple icon color, `.f-social-link`); (2) Navigate (Services · Projects · About · My Process · Results); (3) Specialties list; copyright bar with "Back to top ↑"
+- **Process** `id="process"`, eyebrow "MY PROCESS": 4-step — Discovery Call (free 30 min) → System Design → Build & Test → Launch & Handoff (30-day support); 4-col grid collapses 2-col @ 1024px, 1-col @ 768px
+- **Contact/CTA:** All booking CTAs → `https://calendly.com/ckmendoza-systems/book-a-free-strategy-call`; email `ckmendoza.systems@gmail.com` stays as mailto
+- **Footer:** 3-column — (1) brand logo + tagline + availability badge + location + LinkedIn/Upwork icons (subtle purple-to-blue gradient bg, purple icon color, `.f-social-link`); (2) Navigate (Services · Projects · About · Process · Results); (3) Specialties list; copyright bar with "Back to top ↑"
 - **Meta/SEO:** title and og:title use `|` separator ("CK Mendoza | Automation Specialist"); og:description, og:type, twitter:card in `<head>`; `favicon.svg` (purple #8785FF, "CK" text); add `og:image` with absolute URL once deployed
 
 **Interactive features (all in `index.html` `<script>`):**
@@ -40,7 +40,7 @@
 - Mobile hamburger menu — slides in at ≤768px; closes on link click or outside tap
 - Scroll-to-top button — fixed bottom-right, appears after 400px scroll
 - Animated number counters — replays every IntersectionObserver entry; `cancelAnimationFrame` prevents overlap
-- Project modal — gallery with arrows/dots/fullscreen; ≤900px clicking row opens modal directly; dark mode overrides on gallery arrows + fullscreen btn
+- Project modal — gallery with arrows/dots/fullscreen + keyboard left/right arrow navigation; ≤900px clicking row opens modal directly; dark mode overrides on gallery arrows + fullscreen btn
 - Chat widget — auto-cycling Q&A conversation in hero
 
 **CSS architecture (`styles.css`):**
@@ -49,7 +49,7 @@
 - Responsive breakpoints: 1024px · 900px · 768px · 480px
 - Brand palette: purple `#8785FF` · orange `#FFA94D` · blue `#38B6FF` · pink `#D771FF`
 - Font: Plus Jakarta Sans (Google Fonts)
-- Key classes: `.process-grid` / `.process-step` / `.ps-1–4` (My Process); `.f-social` / `.f-social-link` (footer social icons)
+- Key classes: `.process-grid` / `.process-step` / `.ps-1–4` (Process section); `.f-social` / `.f-social-link` (footer social icons)
 
 ---
 
