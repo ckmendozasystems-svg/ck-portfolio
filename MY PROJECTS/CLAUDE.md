@@ -9,8 +9,8 @@
 ## Folders
 - `MY PROJECTS/` — Sample project images: `GHL/` `MAKE.COM/` `N8N/` `ZAPIER/` ← read as portfolio proof
 - `MY WORK EXPERIENCE/` — `resume/` (outdated) · `previous-work/`
-- `portfolio-website/` — Static HTML/CSS/JS (`index.html` + `styles.css`)
-- `brand-assets/` — headshot.jpg and brand visuals
+- `portfolio-website/` — Static HTML/CSS/JS (`index.html` + `styles.css` + `favicon.svg`)
+- `brand-assets/` — `headshot-gray-bg.jpg` (active, neutral gray bg) · `headshot.jpg` (original, warm bg) · brand visuals
 
 > No folder called "SCREENSHOTS" — images live in the tool folders above.
 
@@ -20,32 +20,36 @@
 → `Documents/portfolio-website/index.html` + `styles.css`
 **Status: Fully built + polished.** All sections live and functional.
 
-**Sections:** Nav · Hero · Tools Marquee · Pain · Services · Impact · Projects (desktop window) · About · Results · CTA · Footer
+**Sections:** Nav · Hero · Tools Marquee · Pain · Services · Impact · Projects (desktop window) · About · My Process · Results · CTA · Footer
 
 **Section highlights:**
+- **Nav:** Services · Projects · About · My Process · Results · Contact (desktop + mobile hamburger)
 - **Hero:** "Stop Running Your Business on Manual." — animated chat widget, CTA to book a strategy call
-- **Tools Marquee:** Auto-scrolling strip — Zapier · Make · n8n · GHL · Asana · Trello · Slack · Notion · Xero · Claude · OpenAI · Gemini · ElevenLabs · Airtable · GitHub · OpenRouter · Grok · Perplexity
+- **Tools Marquee:** Auto-scrolling — Zapier · Make · n8n · GHL · Asana · Trello · Slack · Notion · Xero · Claude · OpenAI · Gemini · ElevenLabs · Airtable · GitHub · OpenRouter · Grok · Perplexity
 - **Services:** GoHighLevel Systems · Zapier Automation · Make.com Workflows · n8n AI Agents
-- **Impact stats:** 80% task reduction · <2 min lead follow-up · 10+ hrs/week saved · 5× more leads nurtured ← animated counters on scroll
-- **Projects:** 20 systems across 6 categories — desktop-window UI with sidebar filter, list, preview pane, full modal per project (problem · steps · before/after · tools · gallery)
-- **About:** VA-turned-Automation Specialist, Philippines, 3+ years ops
-- **Contact/CTA:** All booking CTAs (Book a Call · Book a Free Call · Book a Free Strategy Call · Work With Me · Build Similar System) → `https://calendly.com/ckmendoza-systems` (opens in new tab); displayed email `ckmendoza.systems@gmail.com` stays as mailto
-- **Footer:** 3-column — (1) brand logo + tagline "Automation Specialist building workflows that run 24/7" + green availability badge + location; (2) Navigate links (Services · Projects · About · Results); (3) Specialties plain list (Zapier · Make.com · n8n · GHL); copyright bar with "Back to top ↑" — no CTAs or email (handled by CTA section above); Results section has `id="results"` anchor
+- **Impact stats:** 80% task reduction · <2 min lead follow-up · 10+ hrs/week saved · 5× more leads nurtured; headline "Less Manual Work. More Pipeline. Always On."; animated counters replay on every scroll in both directions (IntersectionObserver + cancelAnimationFrame, no once-only lock)
+- **Projects:** 20 systems across 6 categories — desktop-window UI with sidebar filter, list, preview pane, full modal per project (problem · steps · before/after · tools · gallery); heading is "Systems Built to Perform" (no trailing period); modal gallery arrows fixed (symmetrical at left/right 10px, images have pointer-events: none)
+- **About:** VA-turned-Automation Specialist, Philippines, 3+ years ops; uses `headshot-gray-bg.jpg`
+- **My Process** `id="process"`: 4-step process — Discovery Call (free 30 min) → System Design → Build & Test → Launch & Handoff (30-day support); 4-col grid collapses 2-col @ 1024px, 1-col @ 768px
+- **Contact/CTA:** All booking CTAs → `https://calendly.com/ckmendoza-systems`; email `ckmendoza.systems@gmail.com` stays as mailto; **pending:** swap to direct event-type URL once Chezka provides the slug
+- **Footer:** 3-column — (1) brand logo + tagline + availability badge + location + LinkedIn/Upwork icons (subtle purple-to-blue gradient bg, purple icon color, `.f-social-link`); (2) Navigate (Services · Projects · About · My Process · Results); (3) Specialties list; copyright bar with "Back to top ↑"
+- **Meta/SEO:** title and og:title use `|` separator ("CK Mendoza | Automation Specialist"); og:description, og:type, twitter:card in `<head>`; `favicon.svg` (purple #8785FF, "CK" text); add `og:image` with absolute URL once deployed
 
 **Interactive features (all in `index.html` `<script>`):**
-- Dark mode toggle — sun/moon SVG button upper-right nav; preference persists via `localStorage`; anti-FOUC inline script in `<head>`
+- Dark mode toggle — sun/moon SVG; preference persists via `localStorage`; anti-FOUC inline script in `<head>`
 - Mobile hamburger menu — slides in at ≤768px; closes on link click or outside tap
-- Scroll-to-top button — fixed bottom-right, appears after 400px scroll, purple hover
-- Animated number counters — `IntersectionObserver` triggers ease-out count-up (1.6s) + pop bounce when Impact section enters view; uses `data-count` / `data-prefix` / `data-suffix` on `.impact-num`
-- Project modal — gallery with arrows/dots/fullscreen; on ≤900px clicking a project row opens modal directly (preview pane hidden); gallery arrows + fullscreen button have explicit dark mode overrides (dark bg, white text) so they're visible and clickable in dark mode
+- Scroll-to-top button — fixed bottom-right, appears after 400px scroll
+- Animated number counters — replays every IntersectionObserver entry; `cancelAnimationFrame` prevents overlap
+- Project modal — gallery with arrows/dots/fullscreen; ≤900px clicking row opens modal directly; dark mode overrides on gallery arrows + fullscreen btn
 - Chat widget — auto-cycling Q&A conversation in hero
 
 **CSS architecture (`styles.css`):**
 - CSS custom properties in `:root` — full token system (colors, shadows, radii, font)
-- Dark mode via `[data-theme="dark"]` on `<html>` — overrides all tokens + component colors; `.btn-white` forced to `color: #1a1840` in dark mode (prevents near-white text on white bg); `.gallery-arrow` and `.fullscreen-btn` get dark semi-transparent backgrounds in dark mode
+- Dark mode via `[data-theme="dark"]` on `<html>` — all tokens + components overridden
 - Responsive breakpoints: 1024px · 900px · 768px · 480px
 - Brand palette: purple `#8785FF` · orange `#FFA94D` · blue `#38B6FF` · pink `#D771FF`
 - Font: Plus Jakarta Sans (Google Fonts)
+- Key classes: `.process-grid` / `.process-step` / `.ps-1–4` (My Process); `.f-social` / `.f-social-link` (footer social icons)
 
 ---
 
@@ -69,7 +73,7 @@ Full finalized descriptions → `MY PROJECTS/upwork-descriptions.md` (reuse for 
 ## Upwork Profile
 - **Title:** AI Automation Expert - Zapier, Make.com, n8n, GoHighLevel ✓
 - **15 Skills ✓:** Zapier · Make.com · n8n · Claude · HighLevel · Automation · AI Chatbot · Chatbot Development · Automated Workflow · CRM Automation · Email Automation · Business Process Automation · Sales Funnel · AI Agent Development · Marketing Automation
-- **Work experience descriptions:** Finalized ✓
+- **Links:** LinkedIn → `linkedin.com/in/ck-mendoza` · Upwork → `upwork.com/freelancers/~017c106844b4241997`
 - **Pending:** Overview/bio · Portfolio · Hourly rate
 
 ---
@@ -79,4 +83,5 @@ Full finalized descriptions → `MY PROJECTS/upwork-descriptions.md` (reuse for 
 - Use results-focused language with real numbers (contacts, hours, scale)
 - Always connect work experience to tech/automation angle
 - Read images in `MY PROJECTS/` as portfolio proof points when needed
+- No em dashes in client-facing website content; use commas, colons, or periods instead
 - Only update this CLAUDE.md when Chezka explicitly asks
