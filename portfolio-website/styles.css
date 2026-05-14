@@ -1174,7 +1174,8 @@ body::after {
   .chat-widget  { max-width: 520px; }
   .pain-grid    { grid-template-columns: repeat(2, 1fr); }
   .about-wrap   { grid-template-columns: 1fr; gap: 40px; }
-  .about-img img { height: 400px; }
+  .about-img    { max-width: 360px; margin: 0 auto; }
+  .about-img img { height: auto; }
   .process-grid { grid-template-columns: repeat(2, 1fr); }
 
   /* Desktop window: collapse preview pane */
@@ -1521,7 +1522,7 @@ body::after {
 
 /* Additional mobile fixes */
 @media (max-width: 768px) {
-  .about-img img  { height: 300px; }
+  .about-img      { max-width: 280px; }
   .cta-dark       { padding: 72px 0; }
   .modal-body     { padding: 16px 20px 24px; }
   .mstat          { padding: 12px 8px; }
