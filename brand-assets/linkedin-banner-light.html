@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 1584px;
+    height: 396px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  .banner {
+    width: 1584px;
+    height: 396px;
+    background: linear-gradient(150deg, #ffffff 0%, #f4f1ff 30%, #edf7ff 62%, #fffaf2 100%);
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    position: relative;
+    overflow: hidden;
+    gap: 60px;
+  }
+
+  /* Subtle decorative orbs */
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+  }
+  .orb-1 {
+    width: 480px; height: 480px;
+    background: radial-gradient(circle, rgba(135,133,255,0.14) 0%, transparent 70%);
+    top: -200px; right: 260px;
+  }
+  .orb-2 {
+    width: 260px; height: 260px;
+    background: radial-gradient(circle, rgba(255,169,77,0.12) 0%, transparent 70%);
+    bottom: -120px; right: 60px;
+  }
+  .orb-3 {
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(56,182,255,0.10) 0%, transparent 70%);
+    top: -50px; left: 340px;
+  }
+
+  .left {
+    flex: 1;
+    z-index: 1;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #8785FF;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .eyebrow::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: #8785FF;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  .headline {
+    color: #111111;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 20px;
+    letter-spacing: -1.5px;
+  }
+  .headline .accent {
+    color: #FFA94D;
+    font-style: italic;
+  }
+
+  .sub {
+    color: #555555;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.55;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 18px;
+    z-index: 1;
+    flex-shrink: 0;
+  }
+
+  .tools-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+    max-width: 390px;
+  }
+
+  .pill {
+    background: #ffffff;
+    border: 1.5px solid rgba(135,133,255,0.35);
+    color: #111111;
+    padding: 7px 16px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    box-shadow: 0 1px 4px rgba(135,133,255,0.10);
+  }
+
+  .cta-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+
+  .cta-label {
+    color: #999999;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .cta-btn {
+    background: linear-gradient(135deg, #8785FF 0%, #a78bfa 100%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 14px rgba(135,133,255,0.28);
+  }
+
+  .name-tag {
+    color: #999999;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+  }
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="left">
+    <div class="eyebrow">Automation Specialist</div>
+    <div class="headline">Stop Running Your<br>Business <span class="accent">Manually.</span></div>
+    <div class="sub">I build automation systems that streamline operations,<br>automate follow-ups, and reduce repetitive work.</div>
+  </div>
+
+  <div class="right">
+    <div class="tools-wrap">
+      <div class="pill">Zapier</div>
+      <div class="pill">Make.com</div>
+      <div class="pill">n8n</div>
+      <div class="pill">GoHighLevel</div>
+    </div>
+    <div class="cta-block">
+      <div class="cta-label">Ready to automate?</div>
+      <div class="cta-btn">Book a Free Strategy Call →</div>
+      <div class="name-tag">CK Mendoza · ckmendoza.systems@gmail.com</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

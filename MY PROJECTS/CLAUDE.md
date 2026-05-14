@@ -44,12 +44,111 @@
 - Chat widget — auto-cycling Q&A conversation in hero
 
 **CSS architecture (`styles.css`):**
-- CSS custom properties in `:root` — full token system (colors, shadows, radii, font)
+- CSS custom properties in `:root` — full token system (see Brand Assets below)
 - Dark mode via `[data-theme="dark"]` on `<html>` — all tokens + components overridden
 - Responsive breakpoints: 1024px · 900px · 768px · 480px
-- Brand palette: purple `#8785FF` · orange `#FFA94D` · blue `#38B6FF` · pink `#D771FF`
-- Font: Plus Jakarta Sans (Google Fonts)
 - Key classes: `.process-grid` / `.process-step` / `.ps-1–4` (Process section); `.f-social` / `.f-social-link` (footer social icons)
+
+---
+
+## Brand Assets
+
+### Files
+- `brand-assets/headshot-gray-bg.jpg` — **active** headshot, neutral gray bg (use this everywhere)
+- `brand-assets/headshot.jpg` — original headshot, warm bg (do not use)
+- `brand-assets/linkedin-banner.html` — dark LinkedIn banner (1584×396)
+- `brand-assets/linkedin-banner-light.html` — light LinkedIn banner (1584×396)
+- `portfolio-website/favicon.svg` — purple `#8785FF`, "CK" monogram text
+
+### Typography
+- **Font:** Plus Jakarta Sans — loaded from Google Fonts, weights 400/500/600/700/800
+- **Fallback stack:** `'Plus Jakarta Sans', system-ui, sans-serif`
+- **Headline (hero h1):** `clamp(40px, 6vw, 72px)`, weight 800, `letter-spacing: -2.5px`, `line-height: 1.08`
+- **Section heading (`.sh2`):** `clamp(28px, 4vw, 46px)`, weight 800, `letter-spacing: -1.5px`, `line-height: 1.12`
+- **Eyebrow:** `11px`, weight 700, `letter-spacing: 2.5px`, `text-transform: uppercase`, color: `--purple`
+- **Body line-height:** 1.7; subtext `1.65`
+
+### Color Tokens — Light Mode (`:root`)
+```
+--bg:           #ffffff
+--bg-gray:      #f7f7f8
+--text-primary: #111111
+--text-second:  #555555
+--text-muted:   #999999
+--border:       rgba(0,0,0,0.07)
+
+/* Purple */
+--purple-pale:  #EBEBFF
+--purple-light: #B5B4FF
+--purple:       #8785FF   ← primary brand color
+--purple-dark:  #6563D4
+
+/* Orange */
+--orange-pale:  #FFE7C2
+--orange-light: #FFD699
+--orange:       #FFA94D
+--orange-dark:  #E07B00
+
+/* Pink/Magenta */
+--pink-pale:    #F7E4FF
+--pink-light:   #E8AFFF
+--pink:         #D771FF
+--pink-dark:    #9B00CC
+
+/* Blue */
+--blue-pale:    #E0F2FF
+--blue-light:   #7EC8FF
+--blue:         #38B6FF
+--blue-dark:    #1A9AE8
+```
+
+### Color Tokens — Dark Mode (`[data-theme="dark"]`)
+```
+--bg:           #0c0a1e
+--bg-gray:      #161428
+--text-primary: #f0eeff
+--text-second:  rgba(240,238,255,0.62)
+--text-muted:   rgba(240,238,255,0.38)
+--border:       rgba(255,255,255,0.08)
+
+--purple-pale:  rgba(135,133,255,0.15)
+--orange-pale:  rgba(255,169,77,0.15)
+--pink-pale:    rgba(215,113,255,0.15)
+--blue-pale:    rgba(56,182,255,0.15)
+--purple-light: #9d9bff
+```
+
+### Shadows & Radii
+```
+--shadow:    0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.06)
+--shadow-lg: 0 2px 6px rgba(0,0,0,0.03), 0 16px 40px rgba(0,0,0,0.09)
+
+--radius-sm: 6px
+--radius-md: 10px
+--radius-lg: 16px
+--radius-xl: 24px
+```
+
+### Key Gradients
+- **Hero / LinkedIn banner (light):** `linear-gradient(150deg, #ffffff 0%, #f4f1ff 30%, #edf7ff 62%, #fffaf2 100%)`
+- **Hero (dark):** `linear-gradient(150deg, #0c0a1e 0%, #14103a 30%, #0e1630 62%, #15100d 100%)`
+- **LinkedIn banner (dark):** `linear-gradient(135deg, #0a0718 0%, #150d35 40%, #1e1050 70%, #2a1870 100%)`
+- **Primary CTA button:** `linear-gradient(135deg, #6563D4 0%, #8785FF 55%, #38B6FF 100%)`
+- **Accent gradient (dark banner headline):** `linear-gradient(90deg, #8785FF 0%, #D771FF 100%)`
+
+### Tool Brand Colors (badge backgrounds)
+- **GHL:** `#0056B3` (blue)
+- **Zapier:** `#FF6B2B` (orange)
+- **Make.com:** `#6E00CC` (purple)
+- **n8n:** `#EA4B71` (pink-red)
+
+### Design Patterns
+- Eyebrow labels always in purple (`--purple`), uppercase, tracked at 2.5px
+- Cards use `border-top: 3px solid [accent color]` to color-code by tool/category
+- Pill/badge shape: `border-radius: 100px`
+- Orb blobs (blurred radial gradients) appear in hero and banner backgrounds as subtle depth
+- Dark mode toggle: sun icon (light) / moon icon (dark), persisted via `localStorage`
+- Availability indicator: `#22c55e` green dot + "Available Now" text
 
 ---
 
