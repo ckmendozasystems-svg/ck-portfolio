@@ -18,6 +18,8 @@
 
 ## Portfolio Website
 → `Documents/portfolio-website/index.html` + `styles.css`
+**Live URL:** `https://cksystems.vercel.app` | **Vercel project:** `cksystems` | **GitHub repo:** `ck-portfolio` (main branch)
+**Deploy:** `vercel --prod` from `Documents/` root (NOT from portfolio-website subfolder) — GitHub push does NOT auto-deploy, manual deploy required.
 **Status: Fully built + polished.** All sections live and functional.
 
 **Sections:** Nav · Hero · Tools Marquee · Pain · Services · Impact · Projects (desktop window) · About · Process · Results · CTA · Footer

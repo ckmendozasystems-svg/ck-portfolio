@@ -11,3 +11,8 @@ desktop.ini
 *.log
 .vscode/
 *.code-workspace
+
+# Dev screenshots (local only)
+portfolio-website/screenshots/
+
+.vercel
